@@ -1,0 +1,100 @@
+.food-cards, .drink-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.food-cards div, .drink-cards div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.food-cards p, .drink-cards p, .food-cards a, .drink-cards a {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.food-cards img, .drink-cards img {
+  border-radius: 10px;
+  height: 140px;
+}
+
+.food-cards button, .drink-cards button {
+  border: none;
+  box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  margin: 16px 0;
+  width: 100%;
+}
+
+.category {
+  border-radius: 6px;
+  padding: 8px;
+  width: 42%;
+}
+
+.category:hover {
+  background-color: #71bd46;
+  border-color: #71bd46;
+  color: white;
+}
+
+.share-button {
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 8px;
+  display: flex;
+  height: 50px;
+  width: 50px;
+}
+
+.share-button img {
+  height: 25px;
+}
+
+.tags {
+  display: flex;
+}
+
+.tags p {
+  background-color: red;
+  border: solid 1px black;
+  border-radius: 8px;
+}
+
+.btn-outline-primary {
+  border-color: #71bd46;
+  color: #71bd46;
+}
+
+.btn-outline-primary:hover {
+  background-color: #71bd46;
+  border-color: #71bd46;
+  color: white;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgb(113, 189, 70, 50%);
+}
+
+.btn-outline-primary:not( :disabled ):not( .disabled ):active {
+  background-color: #71bd46;
+  border-color: #71bd46;
+}
+
+.btn-primary:not( :disabled ):not( .disabled ):active {
+  background-color: #71bd46;
+  border-color: #71bd46;
+}

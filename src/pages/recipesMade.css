@@ -1,0 +1,72 @@
+.done-recipes-cards, .favorite-recipes-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.done-recipe-card, .favorite-recipe-card {
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 20%);
+  display: flex;
+}
+
+.recipe-image-done-recipes, .favorite-recipe-image {
+  border-radius: 10px 0 0 10px;
+  width: 180px;
+}
+
+.share-button-done-recipes, .share-button-favorite-recipes {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.share-button-done-recipes img, .share-button-favorite-recipes img {
+  height: 18px;
+}
+
+.recipe-tag {
+  background-color: #e12e4b;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  margin-right: 2px;
+  padding: 2px 6px;
+}
+
+.done-recipe-info, .favorite-recipe-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 0 3px 8px;
+}
+
+.done-recipe-info p, .favorite-recipe-info p {
+  margin: 0;
+}
+
+.done-recipe-title, .favorite-recipe-title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.done-recipe-category, .favorite-recipe-category {
+  color: grey;
+  font-size: 14px;
+}
+
+.done-recipe-name, .favorite-recipe-name {
+  color: #333;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.done-date {
+  font-size: 14px;
+}

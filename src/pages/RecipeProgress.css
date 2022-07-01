@@ -1,0 +1,43 @@
+.lined {
+  text-decoration-line: line-through;
+}
+
+.ingredients-list {
+  background-color: #71bd46;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10% 0;
+  padding: 10px;
+}
+
+.ingredients-list label input {
+  margin: 6px;
+}
+
+.recipe-progress-text, .recipe-details-text {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: #ffd31a;
+  border-color: #ffd31a;
+  border-radius: 0;
+  color: rgba(51, 51, 51);
+  font-weight: 700;
+  width: 100%;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #ffd31a;
+  border-color: #ffd31a;
+  border-radius: 0;
+  color: rgba(51, 51, 51, 0.5);
+  font-weight: 700;
+  width: 100%;
+}
+
+.bottom-button {
+  border-radius: 0;
+}

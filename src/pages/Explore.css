@@ -1,0 +1,15 @@
+.btns-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20% 10% 10%;
+}
+
+.explore-btns {
+  background-color: #ffd31a;
+  border-color: #ffd31a;
+  color: #333;
+  font-weight: 700;
+  height: 45px;
+  margin-top: 20%;
+  width: 100%;
+}

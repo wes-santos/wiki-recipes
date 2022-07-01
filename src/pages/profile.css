@@ -1,0 +1,25 @@
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.button {
+  background-color: #ffd31a;
+  border: solid 1px #ffd31a;
+  border-radius: 6px;
+  margin: 12%;
+  padding: 3%;
+  width: 40%;
+}
+
+.user-email {
+  align-items: center;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
+  margin: 12% 0 5%;
+  width: 100%;
+}

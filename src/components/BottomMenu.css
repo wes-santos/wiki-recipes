@@ -1,0 +1,22 @@
+.footer {
+  align-items: center;
+  background-color: white;
+  bottom: 0;
+  box-shadow: 0 0 6px rgb(0 0 0 / 20%);
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  padding: 8px 0;
+  position: fixed;
+  right: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+footer img {
+  height: 35px;
+  opacity: 0.75;
+}
