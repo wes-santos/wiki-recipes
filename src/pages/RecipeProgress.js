@@ -9,7 +9,7 @@ import './RecipeProgress.css';
 import { mealsRequestById, drinksRequestById } from '../services/API_REQUEST';
 import FavoriteButton from '../components/FavoriteButton';
 import shareIcon from '../images/shareIcon.svg';
-import generateRandomNumbers from '../helpers/generateRandomNumbers';
+import { nanoid } from 'nanoid';
 import ReturnButton from '../components/ReturnButton';
 import finishRecipe from '../helpers/recipeProgressHelpers';
 import Loader from '../components/Loader';
@@ -207,13 +207,13 @@ function RecipeProgress() {
         {ingredientsList.map(({ name, isChecked }, index) => (
           <label
             data-testid={ `${index}-ingredient-step` }
-            key={ name }
+            key={ nanoid() }
             htmlFor={ index + 1 }
             className={ isChecked ? 'lined' : null }
           >
             <input
               id={ index + 1 }
-              key={ name }
+              key={ nanoid() }
               type="checkbox"
               onChange={ lineIgredient }
               checked={ isChecked }
@@ -225,7 +225,7 @@ function RecipeProgress() {
       <h3 className="instructions-title">Instruções</h3>
       <div data-testid="instructions" className="recipe-progress-text">
         {recipe.length && recipe[0].strInstructions.split('.').map((e) => (
-          <p key={ generateRandomNumbers() }>
+          <p key={ nanoid() }>
             {e !== '' && `${e}.`}
           </p>
         ))}
@@ -234,7 +234,7 @@ function RecipeProgress() {
         data-testid="finish-recipe-btn"
         type="button"
         variant="primary"
-        onClick={ () => finishRecipe(history) }
+        onClick={ () => finishRecipe(history, recipe, typeRecipe) }
         disabled={ !isAllChecked() }
       >
         Finish Recipe

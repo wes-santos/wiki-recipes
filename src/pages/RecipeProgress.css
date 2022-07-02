@@ -3,12 +3,16 @@
 }
 
 .ingredients-list {
-  background-color: #71bd46;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   margin: 10% 0;
   padding: 10px;
+}
+
+.ingredients-list li {
+  list-style: none;
+  margin-left: 4px;
 }
 
 .ingredients-list label input {

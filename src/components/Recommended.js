@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import { nanoid } from 'nanoid';
 
 function Recommended(drinksOrMeals, magicNumber) {
   const array = drinksOrMeals;
@@ -9,7 +10,7 @@ function Recommended(drinksOrMeals, magicNumber) {
       <Carousel>
         {(array.slice(0, magicNumber).map((item, index) => (
           <Carousel.Item
-            key={ index }
+            key={ nanoid() }
             data-testid={ `${index}-recomendation-card` }
             // className="drink-cards"
           >

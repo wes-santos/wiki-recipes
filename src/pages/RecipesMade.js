@@ -7,6 +7,7 @@ import shareIcon from '../images/shareIcon.svg';
 import generateRandomNumbers from '../helpers/generateRandomNumbers';
 import { getDoneRecipes } from '../services/localStorage';
 import './recipesMade.css';
+import { nanoid } from 'nanoid';
 
 function RecipesMade() {
   const doneRecipes = getDoneRecipes() || [];
@@ -14,7 +15,7 @@ function RecipesMade() {
 
   const renderTags = (tag, index) => (
     <div
-      key={ generateRandomNumbers() }
+      key={ nanoid() }
       data-testid={ `${index}-${tag}-horizontal-tag` }
       className="recipe-tag"
     >
@@ -54,7 +55,7 @@ function RecipesMade() {
     const objConvertedToArray = [obj];
     return objConvertedToArray.map((food) => (
       <div
-        key={ generateRandomNumbers() }
+        key={ nanoid() }
         className="done-recipe-card"
       >
         <Link to={ `/foods/${food.id}` }>
@@ -114,7 +115,7 @@ function RecipesMade() {
     const objConvertedToArray = [obj];
     return objConvertedToArray.map((drink) => (
       <div
-        key={ generateRandomNumbers() }
+        key={ nanoid() }
         className="done-recipe-card"
       >
         <Link to={ `/drinks/${drink.id}` }>

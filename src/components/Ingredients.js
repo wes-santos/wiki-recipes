@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import React from 'react';
 
 function Ingredients(typeRecipe, recipe) {
@@ -32,7 +33,7 @@ function Ingredients(typeRecipe, recipe) {
       <ul>
         { getIngredients().map((item, index) => (
           <li
-            key={ index }
+            key={ nanoid() }
             data-testid={ `${index}-ingredient-name-and-measure` }
           >
             {item.measure !== ''

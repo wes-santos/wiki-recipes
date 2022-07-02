@@ -7,6 +7,7 @@ import shareIcon from '../images/shareIcon.svg';
 import generateRandomNumbers from '../helpers/generateRandomNumbers';
 import { getFavoriteRecipes } from '../services/localStorage';
 import FavRecipesButton from '../components/FavRecipesButton';
+import { nanoid } from 'nanoid';
 
 function FavoriteRecipes() {
   const favRecipes = getFavoriteRecipes();
@@ -32,7 +33,7 @@ function FavoriteRecipes() {
     const objConvertedToArray = [obj];
     return objConvertedToArray.map((food) => (
       <div
-        key={ generateRandomNumbers() }
+        key={ nanoid() }
         className="favorite-recipe-card"
       >
         <Link to={ `/foods/${food.id}` }>
@@ -96,7 +97,7 @@ function FavoriteRecipes() {
     const objConvertedToArray = [obj];
     return objConvertedToArray.map((drink) => (
       <div
-        key={ generateRandomNumbers() }
+        key={ nanoid() }
         className="favorite-recipe-card"
       >
         <Link to={ `/drinks/${drink.id}` }>

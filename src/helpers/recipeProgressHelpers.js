@@ -59,7 +59,7 @@ const doneRecipeObject = (recipe, typeRecipe) => {
   }
 };
 
-const finishRecipe = (history) => {
+const finishRecipe = (history, recipe, typeRecipe) => {
   saveDoneRecipes(doneRecipeObject(recipe, typeRecipe));
   localStorage.removeItem('inProgressRecipes');
   history.push('/done-recipes');

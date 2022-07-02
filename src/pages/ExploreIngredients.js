@@ -7,6 +7,7 @@ import { getFoodsList, getDrinksList } from '../services/dataAPI';
 import Header from '../components/Header';
 import BottomMenu from '../components/BottomMenu';
 import Loader from '../components/Loader';
+import { nanoid } from 'nanoid';
 
 function ExploreByIngredients() {
   const history = useHistory();
@@ -52,7 +53,7 @@ function ExploreByIngredients() {
       <div className="ingredients-container">
         {(foodsIng.slice(0, SHOW_TWELVE_ITEMS).map((item, index) => (
           <div
-            key={ index }
+            key={ nanoid() }
             data-testid={ `${index}-ingredient-card` }
             className="ingredients-cards"
           >
@@ -81,7 +82,7 @@ function ExploreByIngredients() {
       <div className="ingredients-container">
         {(drinksIng.slice(0, SHOW_TWELVE_ITEMS).map((item, index) => (
           <div
-            key={ index }
+            key={ nanoid() }
             data-testid={ `${index}-ingredient-card` }
             className="ingredients-cards"
           >

@@ -7,6 +7,7 @@ import appContext from '../context/appContext';
 import { getFiltredNationalities, getNationalitiesList } from '../services/dataAPI';
 import './recipes.css';
 import './nationality.css';
+import { nanoid } from 'nanoid';
 
 function ExploreByNationality() {
   const { foods, setFoods } = useContext(appContext);
@@ -57,7 +58,7 @@ function ExploreByNationality() {
               <option value="All" data-testid="All-option">All</option>
               { nationalities.map((area) => (
                 <option
-                  key={ area.strArea }
+                  key={ nanoid() }
                   data-testid={ `${area.strArea}-option` }
                   value={ area.strArea }
                 >

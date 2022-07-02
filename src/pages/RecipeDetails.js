@@ -14,6 +14,7 @@ import FavoriteButton from '../components/FavoriteButton';
 import generateRandomNumbers from '../helpers/generateRandomNumbers';
 import ReturnButton from '../components/ReturnButton';
 import Loader from '../components/Loader';
+import { nanoid } from 'nanoid';
 
 function RecipeDetails() {
   const history = useHistory();
@@ -95,7 +96,7 @@ function RecipeDetails() {
           <h3 className="instructions-title">Instruções</h3>
           <div data-testid="instructions" className="recipe-details-text">
             {recipe.length && recipe[0].strInstructions.split('.').map((e) => (
-              <p key={ generateRandomNumbers() }>
+              <p key={ nanoid() }>
                 {e !== '' && `${e}.`}
               </p>
             ))}

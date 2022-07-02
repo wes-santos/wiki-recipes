@@ -3,9 +3,6 @@ import copy from 'clipboard-copy';
 import shareIcon from '../images/shareIcon.svg';
 
 function ShareButton(pathname) {
-  /* const location = useLocation();
-  console.log(location); */
-
   const shareOnClick = ({ target }) => {
     copy(`http://localhost:3000${pathname}`);
     if (target.innerHTML === '') {

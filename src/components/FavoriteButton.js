@@ -12,13 +12,6 @@ function FavoriteButton(parameters) {
     recipe,
   } = parameters;
 
-  // useEffect(() => {
-  //   const favItems = getFavoriteRecipes();
-  //   if (favItems.length > 0) {
-  //     setIsFavorite(true);
-  //   }
-  // }, [setIsFavorite]);
-
   const handleFavorite = () => {
     if (isFavorite) {
       const getFavItems = getFavoriteRecipes();

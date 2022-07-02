@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import appContext from '../context/appContext';
 import './recipes.css';
 import Loader from '../components/Loader';
+import { nanoid } from 'nanoid';
 
 function DrinkRecipes() {
   const {
@@ -120,7 +121,7 @@ function DrinkRecipes() {
               <Button
                 type="button"
                 data-testid={ `${e.strCategory}-category-filter` }
-                key={ i }
+                key={ nanoid() }
                 className="category"
                 name={ e.strCategory }
                 onClick={ handleClick }
