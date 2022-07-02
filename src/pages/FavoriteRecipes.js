@@ -4,7 +4,6 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import shareIcon from '../images/shareIcon.svg';
-import generateRandomNumbers from '../helpers/generateRandomNumbers';
 import { getFavoriteRecipes } from '../services/localStorage';
 import FavRecipesButton from '../components/FavRecipesButton';
 import { nanoid } from 'nanoid';

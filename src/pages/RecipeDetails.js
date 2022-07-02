@@ -11,7 +11,6 @@ import ShareButton from '../components/ShareButton';
 import Ingredients from '../components/Ingredients';
 import Recommended from '../components/Recommended';
 import FavoriteButton from '../components/FavoriteButton';
-import generateRandomNumbers from '../helpers/generateRandomNumbers';
 import ReturnButton from '../components/ReturnButton';
 import Loader from '../components/Loader';
 import { nanoid } from 'nanoid';
