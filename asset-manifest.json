@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wiki-recipes/static/css/main.d27f9133.css",
+    "main.js": "/wiki-recipes/static/js/main.ee806565.js",
+    "static/media/newExploreIcon.png": "/wiki-recipes/static/media/newExploreIcon.fbbe942925f1096a40af.png",
+    "static/media/profileIcon.svg": "/wiki-recipes/static/media/profileIcon.44eb3608f431845fe2fc2d2a23d758ae.svg",
+    "static/media/whiteHeartIcon.svg": "/wiki-recipes/static/media/whiteHeartIcon.2b822118952dc5140129c6349fcd0472.svg",
+    "static/media/newMealIcon.png": "/wiki-recipes/static/media/newMealIcon.22f5f9610631edef4f7b.png",
+    "static/media/searchIcon.svg": "/wiki-recipes/static/media/searchIcon.7353564d025de989f86f66ecb0202a04.svg",
+    "static/media/newDrinkIcon.png": "/wiki-recipes/static/media/newDrinkIcon.fca711f076cbc74cb83c.png",
+    "static/media/blackHeartIcon.svg": "/wiki-recipes/static/media/blackHeartIcon.083cb006913d197c95857ebfa2161db7.svg",
+    "static/media/shareIcon.svg": "/wiki-recipes/static/media/shareIcon.cbe3b1b32dce424b8ccce30cac48de2d.svg",
+    "index.html": "/wiki-recipes/index.html",
+    "static/media/returnIcon.svg": "/wiki-recipes/static/media/returnIcon.a9ec7a4ecdf1d7a8c8f254dfb86d5665.svg",
+    "main.d27f9133.css.map": "/wiki-recipes/static/css/main.d27f9133.css.map",
+    "main.ee806565.js.map": "/wiki-recipes/static/js/main.ee806565.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d27f9133.css",
+    "static/js/main.ee806565.js"
+  ]
+}
